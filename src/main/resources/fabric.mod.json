@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "id": "evolved",
+  "version": "${version}",
+
+  "name": "Origins MIAFG Evolved",
+  "description": "A WIP version for the upcoming MIAFG Origins return!",
+  "authors": [
+    "ItsSheepish"
+  ],
+  "contact": {
+    "homepage": "https://miafg.com/",
+    "sources": "https://github.com/LarryPlayz/Origins-Evolved-MIAFG"
+  },
+
+  "license": "MIT",
+  "icon": "assets/evolved/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.miafg.evolved.EvolvedMod"
+    ],
+    "client": [
+      "net.miafg.evolved.EvolvedModClient"
+    ]
+  },
+  "mixins": [
+    "originsmiafgevolved.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.18",
+    "fabric-api": "*",
+    "minecraft": "~1.19.2",
+    "java": ">=17",
+    "origins": ">=1.7.1",
+    "pehkui": ">=3.7.2"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
