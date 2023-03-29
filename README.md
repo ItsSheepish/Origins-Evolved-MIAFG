@@ -57,7 +57,7 @@ All origins used in this mod (including from the base origins mod) allow you to 
 - Bottle of Evolution (potion)
 - Mushroom Cap (helmet slot)
     - for Mushroom Dweller
-- Crown
+- Crown (helmet slot)
     - for Pharaoh
-- Dragon Scale Sword
+- Dragon Scale Sword (sword)
     - for Valkyrie
