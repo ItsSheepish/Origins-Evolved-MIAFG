@@ -55,9 +55,12 @@ All origins used in this mod (including from the base origins mod) allow you to 
 ### Items
 
 - Bottle of Evolution (potion)
+    - For every origin
+    - Gives the player an advancement (current idea) / custom tree (if i can) and evolves their current origin to the next level (if the potion is made correctly) 
 - Mushroom Cap (helmet slot)
-    - for Mushroom Dweller
+    - For Mushroom Dweller
+    - Prevents the player from wearing a helmet
 - Crown (helmet slot)
-    - for Pharaoh
+    - For Pharaoh
 - Dragon Scale Sword (sword)
-    - for Valkyrie
+    - For Valkyrie
