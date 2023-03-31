@@ -42,8 +42,8 @@ If you want to report a bug, please visit [the issue tracker](https://github.com
 + You have a pocket dimension (only desert biome): no other mobs or players can be sent here, **it is just a world where you can build**
 + You can toggle shadow mode (which lasts for 30 seconds)
 
-    - In *Shadow Mode*: You see in a darker tone, you are much faster, you are able to phase into and out of blocks, you are able to become the shadow of a player/mob (mount/ride any mob you right click). This mode lasts for 30 seconds unless interupted; it can be cancelled at any time and recharged when the sun is above you (not blocked by any full blocks).
-    - You will have an increased hunger drain while in this mod however and it **will not** kick you out of the toggle if you start taking hunger damage therefore it is important you keep an eye on it. It *will* kick you out of the mode if you take damage from a player.
+   - In *Shadow Mode*: You see in a darker tone, you are much faster, you are able to phase into and out of blocks, you are able to become the shadow of a player/mob (mount/ride any mob you right click). This mode lasts for 30 seconds unless interupted; it can be cancelled at any time and recharged when the sun is above you (not blocked by any full blocks).
+   - You will have an increased hunger drain while in this mod however and it **will not** kick you out of the toggle if you start taking hunger damage therefore it is important you keep an eye on it. It *will* kick you out of the mode if you take damage from a player.
 </details>
 
 <details>
@@ -77,7 +77,7 @@ All origins used in this mod (including from the base origins mod) allow you to 
 
 - Bottle of Evolution (potion)
     - For every origin
-    - Gives the player an advancement (current idea) / custom tree (if i can) and evolves their current origin to the next level (if the potion is made correctly)
+    - Gives the player an advancement (current idea) / custom tree (if i can) and evolves their current origin to the next level (if the potion is made correctly) 
 - Mushroom Cap (helmet slot)
     - For Mushroom Dweller
     - Prevents the player from wearing a helmet
