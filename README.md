@@ -1,3 +1,5 @@
+before anything I want to say this is my first mod and am working through at a slow pace to add all the features I want, this is meant for a small server of friends. I am following tutorials by Modding by Kaupenjoe adding features which I choose. Thanks, Sheepish.
+
 # MIAFG Evolved Mod
 
 <p>
