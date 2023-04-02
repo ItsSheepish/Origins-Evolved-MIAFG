@@ -1,0 +1,1 @@
+give @s minecraft:honey_bottle{display:{Name:'{"text":"Bottle Of Evolution","italic":false,"color":"#7fad89","bold":true}',Lore:['{"text":"This concoction seems to emanate power,","color":"#a5c7c5"}','{"text":"if you drink it who knows what may happen...","color":"#a5c7c5"}']},Enchantments:[{id:"unbreaking",lvl:5}]}

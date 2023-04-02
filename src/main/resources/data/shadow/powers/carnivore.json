@@ -1,0 +1,26 @@
+{
+    "type": "origins:prevent_item_use",
+    "item_condition": {
+      "type": "origins:and",
+      "conditions": [
+        {
+          "type": "origins:food"
+        },
+        {
+          "type": "origins:ingredient",
+          "ingredient": {
+            "tag": "shadow:meat"
+          },
+          "inverted": true
+        }
+      ]
+    },
+    "name": "Carnivore",
+    "description": "Your diet is restricted to meat, you can't eat vegetables.",
+    "badges": [
+        {
+            "sprite": "minecraft:textures/item/beef.png",
+            "text": "Meat"
+        }
+    ]
+}

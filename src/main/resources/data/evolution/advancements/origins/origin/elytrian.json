@@ -1,0 +1,27 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:elytra"
+        },
+        "title": {
+            "text": "Levitate"
+        },
+        "description": "You don't have that yet. Instead, you cast jump",
+        "frame": "goal",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "chose_elytra": {
+            "trigger": "origins:chose_origin",
+            "conditions": {
+                "origin": "origins:elytrian"
+            }
+        }
+    },
+    "requirements": [
+        ["chose_elytra"]
+    ],
+    "parent": "evolution:origins/origin/origin"
+}

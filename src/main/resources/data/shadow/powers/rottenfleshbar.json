@@ -1,0 +1,84 @@
+{
+    "type": "origins:multiple",
+    "zombie_bar": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 14,
+        "start_value": 14,
+        "hud_render": {
+            "should_render": true,
+            "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_points_01.png",
+            "bar_index": 10
+        }
+    },
+    "hunger": {
+        "type": "origins:action_over_time",
+        "interval": 1200,
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "*:*_zombie_bar",
+            "change": -1
+        }
+    },
+    "feed": {
+        "type": "origins:action_on_item_use",
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "*:*_zombie_bar",
+            "change": 2
+        },
+        "item_condition": {
+            "type": "origins:ingredient",
+            "ingredient": {
+                "item": "minecraft:rotten_flesh"
+            }
+        }
+    },
+    "seeing_red": {
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:grant_power",
+            "power": "shadow:red_overlay",
+            "source": "shadow:red_overlay"
+        },
+        "condition": {
+            "type": "origins:resource",
+            "resource": "*:*_zombie_bar",
+            "comparison": "==",
+            "compare_to": 0
+        }
+    },
+    "seeing_red1": {
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:revoke_power",
+            "power": "shadow:red_overlay",
+            "source": "shadow:red_overlay"
+        },
+        "condition": {
+            "type": "origins:resource",
+            "resource": "*:*_zombie_bar",
+            "comparison": ">",
+            "compare_to": 0
+        }
+    },
+    "true_flesh": {
+        "type": "origins:self_action_on_hit",
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "*:*_zombie_bar",
+            "change": 1
+        },
+        "cooldown": 200
+    },
+    "rebirth": {
+        "type": "origins:action_on_callback",
+        "entity_action_respawned": {
+            "type": "origins:change_resource",
+            "resource": "*:*_zombie_bar",
+            "change": 14
+        }
+    },
+    "name": "Cannibal",
+    "description": "You have a timer which slowly ticks down until you go into a cannibalistic rage where you either need to eat rotten flesh or attack another mob"
+}

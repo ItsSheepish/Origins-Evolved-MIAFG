@@ -1,0 +1,27 @@
+{
+	"powers": [
+		"shadow:wrapped",
+
+		"shadow:quick_sand",
+		"shadow:quick_sand1",
+		"shadow:egypt",
+
+		"shadow:shadow_view",
+		"shadow:shadow_view_dismount",
+
+		"shadow:freezeatnight",
+		
+		"shadow:carnivore",
+		"shadow:zombie",
+		"shadow:rottenfleshbar",
+
+		"shadow:level1/shadowmode_better",
+		"shadow:level1/prevent_evolve"
+	],
+	"icon": "minecraft:chiseled_red_sandstone",
+	"order": 10,
+	"impact": 3,
+	"name": "Dark Pharaoh",
+	"description": "The true power of the light begins to shine through the pharaoh...",
+	"unchoosable": true
+}

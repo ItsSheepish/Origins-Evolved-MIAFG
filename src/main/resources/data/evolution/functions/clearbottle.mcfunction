@@ -1,0 +1,1 @@
+clear @s minecraft:honey_bottle{Enchantments:[{id:unbreaking,lvl:5}]} 1

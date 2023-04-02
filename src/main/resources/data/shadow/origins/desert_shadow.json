@@ -1,0 +1,31 @@
+{
+	"powers": [
+		"shadow:wrapped",
+
+		"shadow:quick_sand",
+		"shadow:quick_sand1",
+		"shadow:egypt",
+
+		"shadow:shadowmode",
+		"shadow:shadow_view",
+		"shadow:shadow_view_dismount",
+
+		"shadow:freezeatnight",
+		
+		"shadow:carnivore",
+		"shadow:zombie",
+		"shadow:rottenfleshbar"
+	],
+	"icon": "minecraft:chiseled_sandstone",
+	"order": 10,
+	"impact": 3,
+	"name": "Desert Shadow",
+	"description": "The spirit of a pharaoh lives on as the undead shadow",
+	"upgrades": [
+		{
+			"condition": "evolution:origins/challenge/evolve/evolve",
+			"announcement": "You have released the spirit of the dragon, your power has grown...",
+			"origin": "shadow:shadow_pharaoh"
+		}
+	]
+}

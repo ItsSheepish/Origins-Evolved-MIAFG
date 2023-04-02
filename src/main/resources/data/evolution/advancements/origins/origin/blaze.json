@@ -1,0 +1,27 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:blaze_rod"
+        },
+        "title": {
+            "text": "Fire Ball!"
+        },
+        "description": "Wait... you can't cast fireball at 1st level",
+        "frame": "goal",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "chose_blazeborn": {
+            "trigger": "origins:chose_origin",
+            "conditions": {
+                "origin": "origins:blazeborn"
+            }
+        }
+    },
+    "requirements": [
+        ["chose_blazeborn"]
+    ],
+    "parent": "evolution:origins/origin/origin"
+}

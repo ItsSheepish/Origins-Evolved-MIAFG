@@ -1,0 +1,41 @@
+{
+    "display": {
+        "icon": {
+            "item": "origins:orb_of_origin",
+            "nbt": "{Enchantments:[{id:\"sharpness\",lvl:1}]}"
+        },
+        "title": {
+            "text": "Time To Change!",
+            "color": "light_green"
+        },
+        "description": "You decided to switch it up a bit",
+        "frame": "challenge",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "criteria": {
+        "rebirth": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                {
+                    "items": [
+                        "origins:orb_of_origin"
+                    ]
+                }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        ["rebirth"]
+    ],
+    "rewards": {
+        "experience": 160,
+        "recipes": [
+            "evolution:orb_of_origin"
+        ]
+    },
+    "parent": "evolution:origins/challenge/kill_edragon"
+}

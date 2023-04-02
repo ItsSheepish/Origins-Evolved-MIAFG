@@ -1,0 +1,28 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:player_head",
+            "nbt": "{SkullOwner: \"ItsSheepish\"}"
+        },
+        "title": {
+            "text": "Basic Bi-otch"
+        },
+        "description": "Roll a wisdom saving throw for how intimidated you are from your friends' new powers (chose human)",
+        "frame": "goal",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "chose_human": {
+            "trigger": "origins:chose_origin",
+            "conditions": {
+                "origin": "origins:human"
+            }
+        }
+    },
+    "requirements": [
+        ["chose_human"]
+    ],
+    "parent": "evolution:origins/origin/origin"
+}

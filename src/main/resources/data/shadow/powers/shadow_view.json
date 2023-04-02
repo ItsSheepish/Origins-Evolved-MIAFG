@@ -1,0 +1,26 @@
+{
+    "type": "origins:action_on_entity_use",
+    "bientity_action": {
+        "type": "origins:mount"
+    },
+    "condition": {
+        "type": "origins:and",
+        "conditions": [
+            {
+                "type": "origins:daytime"
+            },
+            {
+                "type": "origins:power_active",
+                "power": "shadow:shadowmode_toggle"
+            }
+        ]
+    },
+    "name": "Shadow View",
+    "description": "You can become the shadow of anything or anyone (by right clicking a mob you can mount them; this will dismount if you deactivate the power in any way)",
+    "badges": [
+        {
+            "sprite": "minecraft:textures/item/coal.png",
+            "text": "Void Presence"
+        }
+    ]
+}

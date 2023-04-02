@@ -1,0 +1,27 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:music_disc_cat"
+        },
+        "title": {
+            "text": "UwU"
+        },
+        "description": "OwO",
+        "frame": "goal",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "chose_feline": {
+            "trigger": "origins:chose_origin",
+            "conditions": {
+                "origin": "origins:feline"
+            }
+        }
+    },
+    "requirements": [
+        ["chose_feline"]
+    ],
+    "parent": "evolution:origins/origin/origin"
+}

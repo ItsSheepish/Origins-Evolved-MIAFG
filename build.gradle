@@ -16,6 +16,12 @@ repositories {
 		url "https://maven.shedaniel.me/"
 	}
 	maven {
+		url = 'https://maven.cafeteria.dev'
+		content {
+			includeGroup 'net.adriantodt.fabricmc'
+		}
+	}
+	maven {
 		name "mod menu"
 		url "https://maven.terraformersmc.com/"
 	}

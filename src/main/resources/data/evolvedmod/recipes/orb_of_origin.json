@@ -1,0 +1,41 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "qwe",
+        "asd",
+        "zxc"
+    ],
+    "key": {
+        "q": {
+            "item": "minecraft:ender_pearl"
+        },
+        "w": {
+            "item": "minecraft:conduit"
+        },
+        "e": {
+            "item": "minecraft:phantom_membrane"
+        },
+        "a": {
+            "item": "minecraft:elytra"
+        },
+        "s": {
+            "item": "minecraft:nether_star"
+        },
+        "d": {
+            "item": "minecraft:blaze_rod"
+        },
+        "z": {
+            "item": "minecraft:shulker_box"
+        },
+        "x": {
+            "item": "minecraft:cobweb"
+        },
+        "c": {
+            "item": "minecraft:turtle_egg"
+        }
+    },
+    "result": {
+        "item": "origins:orb_of_origin",
+        "count": 1
+    }
+}

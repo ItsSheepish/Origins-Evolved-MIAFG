@@ -11,6 +11,9 @@ public class ModItems {
     public static final Item EvolvePotionItem = registerItem("evolution_bottle",
             new EvolvePotionItem(new FabricItemSettings().group(ModItemGroup.MIAFG_EXCLUSIVE).maxCount(1)));
 
+    public static final Item FlowerPouch = registerItem("flower_pouch",
+            new Item(new FabricItemSettings().group(ModItemGroup.MIAFG_EXCLUSIVE).maxCount(32)));
+
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registry.ITEM, new Identifier(EvolvedMod.MOD_ID, name), item);

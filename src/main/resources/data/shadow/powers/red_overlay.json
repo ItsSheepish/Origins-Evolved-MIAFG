@@ -1,0 +1,24 @@
+{
+    "type": "origins:multiple",
+    "red": {
+        "type": "origins:overlay",
+        "texture": "minecraft:textures/block/redstone_block.png",
+        "strength": 0.75,
+        "draw_mode": "texture",
+        "draw_phase": "below_hud",
+        "hide_with_hud": false,
+        "visible_in_third_person": true
+    },
+    "dmg": {
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:damage",
+            "amount": 1,
+            "source": {
+                "name": "outOfWorld",
+                "bypasses_armor": true,
+                "unblockable": true
+            }
+        }
+    }
+}

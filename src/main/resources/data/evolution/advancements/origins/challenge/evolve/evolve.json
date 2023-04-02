@@ -1,0 +1,47 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:honey_bottle",
+            "nbt": "{Enchantments:[{id:\"sharpness\",lvl:1}]}"
+        },
+        "title": {
+            "text": "Evolution!",
+            "color": "light_green"
+        },
+        "description": "The process of evolution is a long one",
+        "frame": "challenge",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "criteria": {
+        "evolve": {
+            "trigger": "minecraft:using_item",
+            "conditions": {
+                "item": {
+                    "items": [
+                        "minecraft:honey_bottle"
+                    ],
+                    "enchantments": [
+                        {
+                            "enchantment": "minecraft:unbreaking",
+                            "levels": 5
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "requirements": [
+        ["evolve"]
+    ],
+    "rewards": {
+        "experience": 160,
+        "recipes": [
+            "evolution:orb_of_origin",
+            "evolution:makeshift_bottle"
+        ],
+        "function": "evolution:clearbottle"
+    },
+    "parent": "evolution:origins/challenge/kill_edragon"
+}

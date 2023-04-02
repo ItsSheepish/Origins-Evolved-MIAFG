@@ -1,0 +1,248 @@
+{
+    "type": "origins:multiple",
+    "toggle": {
+        "type": "origins:toggle",
+        "active_by_default": false,
+        "key": {
+            "key": "key.origins.secondary_active"
+        }
+    },
+    "toggle1": {
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:toggle",
+            "power": "*:*_toggle"
+        },
+        "condition": {
+            "type": "origins:resource",
+            "resource": "*:*_timer_timer",
+            "comparison": "==",
+            "compare_to": 0
+        }
+    },
+    "phase": {
+        "type": "origins:phasing",
+        "render_type": "blindness",
+        "phase_down_condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:sneaking"
+                }
+            ]
+        },
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:power_active",
+                    "power": "*:*_toggle"
+                },
+                {
+                    "type": "origins:daytime"
+                },
+                {
+                    "type": "origins:resource",
+                    "resource": "*:*_timer_timer",
+                    "comparison": ">",
+                    "compare_to": 0
+                }
+            ]
+        }
+    },
+    "invisible": {
+        "type": "origins:invisibility",
+        "render_armor": false,
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:power_active",
+                    "power": "*:*_toggle"
+                },
+                {
+                    "type": "origins:daytime"
+                },
+                {
+                    "type": "origins:resource",
+                    "resource": "*:*_timer_timer",
+                    "comparison": ">",
+                    "compare_to": 0
+                }
+            ]
+        }
+    },
+    "darkness": {
+        "type": "origins:overlay",
+        "texture": "minecraft:textures/block/black_concrete.png",
+        "strength": 0.65,
+        "red": 1.0,
+        "green": 1.0,
+        "blue": 1.0,
+        "draw_mode": "texture",
+        "draw_phase": "below_hud",
+        "hide_with_hud": false,
+        "visible_in_third_person": true,
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:power_active",
+                    "power": "*:*_toggle"
+                },
+                {
+                    "type": "origins:daytime"
+                },
+                {
+                    "type": "origins:resource",
+                    "resource": "*:*_timer_timer",
+                    "comparison": ">",
+                    "compare_to": 0
+                }
+            ]
+        }
+    },
+    "speed": {
+        "type": "origins:stacking_status_effect",
+        "min_stacks": 1,
+        "max_stacks": 1,
+        "duration_per_stack": 8,
+        "tick_rate": 4,
+        "effects": [
+            {
+                "effect": "minecraft:speed",
+                "is_ambient": true,
+                "show_particles": false,
+                "amplifier": 2,
+                "show_icon": false
+            }
+        ],
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:power_active",
+                    "power": "*:*_toggle"
+                },
+                {
+                    "type": "origins:daytime"
+                },
+                {
+                    "type": "origins:resource",
+                    "resource": "*:*_timer_timer",
+                    "comparison": ">",
+                    "compare_to": 0
+                }
+            ]
+        }
+    },
+    "fall_damage": {
+        "type": "origins:modify_falling",
+        "velocity": 0.1,
+        "take_fall_damage": false,
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:power_active",
+                    "power": "*:*_toggle"
+                },
+                {
+                    "type": "origins:daytime"
+                },
+                {
+                    "type": "origins:resource",
+                    "resource": "*:*_timer_timer",
+                    "comparison": ">",
+                    "compare_to": 0
+                }
+            ]
+        }
+    },
+    "hunger": {
+        "type": "origins:exhaust",
+        "interval": 20,
+        "exhaustion": 4.0,
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:power_active",
+                    "power": "*:*_toggle"
+                },
+                {
+                    "type": "origins:daytime"
+                },
+                {
+                    "type": "origins:resource",
+                    "resource": "*:*_timer_timer",
+                    "comparison": ">",
+                    "compare_to": 0
+                }
+            ]
+        }
+    },
+    "timer_timer": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 90,
+        "start_value": 90,
+        "hud_render": {
+            "should_render": true,
+            "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_02.png",
+            "bar_index": 24
+        }
+    },
+    "timer_sun": {
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "*:*_timer_timer",
+            "change": 1
+        },
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:power_active",
+                    "power": "*:*_toggle",
+                    "inverted": true
+                },
+                {
+                    "type": "origins:daytime"
+                },
+                {
+                    "type": "origins:exposed_to_sky"
+                }
+            ]
+        }
+    },
+    "timer_use": {
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "*:*_timer_timer",
+            "change": -1
+        },
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:power_active",
+                    "power": "*:*_toggle"
+                },
+                {
+                    "type": "origins:daytime"
+                }
+            ]
+        }
+    },
+    "name": "Shadow",
+    "description": "Through your connection with ancient magic, you have the ability to temporarily turn into a shadow, being able to travel at high speeds and phase through objects and people while cloaked",
+    "badges": [
+        {
+            "sprite": "minecraft:textures/item/dried_kelp.png",
+            "text": "Cloaking"
+        }
+    ]
+}

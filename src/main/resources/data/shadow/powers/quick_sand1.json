@@ -1,0 +1,26 @@
+{
+    "type": "origins:self_glow",
+    "bientity_condition": {
+        "type": "origins:can_see"
+    },
+    "use_teams": false,
+    "red": 1,
+    "green": 0.843,
+    "blue": 0,
+    "condition": {
+        "type": "origins:biome",
+        "condition": {
+            "type": "origins:temperature",
+            "comparison": ">=",
+            "compare_to": 2
+        }
+    },
+    "name":"Egyptian Radiance",
+    "description":"You wish to be close to home, when in a warmer climate (like a desert) you glow; gaining speed and temporary hearts and when in colder temperatures (like a snowy biome) you will become slow, weak and hungry",
+    "badges": [
+        {
+            "sprite": "minecraft:textures/item/spectral_arrow.png",
+            "text": "Egypt"
+        }
+    ]
+}

@@ -1,0 +1,9 @@
+{
+    "type": "origins:action_over_time",
+    "interval": 20,
+    "entity_action": {
+        "type":"origins:execute_command",
+        "command": "function shadow:zombieteam",
+        "permission_level": 4
+    }
+}

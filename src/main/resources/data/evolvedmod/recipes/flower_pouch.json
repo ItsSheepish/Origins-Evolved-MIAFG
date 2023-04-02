@@ -1,0 +1,35 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "minecraft:cornflower"
+        },
+        {
+            "item": "minecraft:oxeye_daisy"
+        },
+        {
+            "item": "minecraft:sunflower"
+        },
+        {
+            "item": "minecraft:dandelion"
+        },
+        {
+            "item": "minecraft:poppy"
+        },
+        {
+            "item": "minecraft:blue_orchid"
+        },
+        {
+            "item": "minecraft:allium"
+        },
+        {
+            "item": "minecraft:azure_bluet"
+        },
+        {
+            "item": "minecraft:red_tulip"
+        }
+    ],
+    "result": {
+        "item": "evolved:flower_pouch"
+    }
+}

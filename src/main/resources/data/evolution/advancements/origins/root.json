@@ -1,0 +1,41 @@
+{
+    "display": {
+        "icon": {
+            "item": "origins:orb_of_origin"
+        },
+        "title": {
+            "text": "Origins!!",
+            "color": "light_green"
+        },
+        "description": "You logged on to MIAFG EVOLUTIONS!!!",
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "background": "minecraft:textures/block/black_concrete.png",
+        "hidden": false
+    },
+    "criteria": {
+        "login": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "player": {
+                    "location": {
+                        "position": {
+                            "x": {
+                                "min": -40,
+                                "max": 40
+                            },
+                            "z": {
+                                "min": -40,
+                                "max": 40
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "requirements": [
+        ["login"]
+    ]
+}

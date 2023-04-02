@@ -1,0 +1,37 @@
+{
+    "type": "origins:stacking_status_effect",
+    "min_stacks": -5,
+    "max_stacks": 5,
+    "duration_per_stack": 8,
+    "tick_rate": 20,
+    "effects": [
+        {
+            "effect": "minecraft:weakness",
+            "is_ambient": true,
+            "show_particles": false,
+            "show_icon": true
+        },
+        {
+            "effect": "minecraft:hunger",
+            "is_ambient": true,
+            "show_particles": false,
+            "show_icon": false
+        },
+        {
+            "effect": "minecraft:slowness",
+            "is_ambient": true,
+            "show_particles": false,
+            "amplifier": 1,
+            "show_icon": true
+        }
+    ],
+    "condition": {
+        "type": "origins:biome",
+        "condition": {
+            "type": "origins:temperature",
+            "comparison": "==",
+            "compare_to": 0
+        }
+    },
+    "hidden":"true"
+}

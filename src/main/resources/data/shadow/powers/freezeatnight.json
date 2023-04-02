@@ -1,0 +1,43 @@
+{
+    "type": "origins:freeze",
+    "condition": {
+        "type": "origins:or",
+        "conditions": [
+            {
+                "type": "origins:and",
+                "conditions": [
+                    {
+                        "type": "origins:daytime",
+                        "inverted": true
+                    },
+                    {
+                        "type": "origins:exposed_to_sky"
+                    }
+                ]
+            },
+            {
+                "type": "origins:and",
+                "conditions": [
+                    {
+                        "type": "origins:biome",
+                        "condition": {
+                            "type": "origins:precipitation",
+                            "precipitation": "snow"
+                        }
+                    },
+                    {
+                        "type": "origins:exposed_to_sky"
+                    }
+                ]
+            }
+        ]
+    },
+    "name": "Freeze",
+    "description": "You become cold enough to freeze when in a snowy biome or at night",
+    "badges": [
+        {
+            "sprite": "minecraft:textures/item/snowball.png",
+            "text": "Brrr"
+        }
+    ]
+}

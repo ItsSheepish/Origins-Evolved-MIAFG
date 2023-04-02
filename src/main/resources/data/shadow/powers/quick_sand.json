@@ -1,0 +1,40 @@
+{
+    "type": "origins:stacking_status_effect",
+    "min_stacks": -1,
+    "max_stacks": 1,
+    "duration_per_stack": 2000,
+    "tick_rate": 2000,
+    "effects": [
+        {
+            "effect": "minecraft:speed",
+            "is_ambient": true,
+            "show_particles": false,
+			"amplifier": 0,
+            "show_icon": false
+        },
+		{
+            "effect": "minecraft:absorption",
+            "is_ambient": true,
+            "show_particles": false,
+			"amplifier": 1,
+            "show_icon": false
+        }
+	],
+    "condition": {
+        "type": "origins:and",
+        "conditions": [
+            {
+                "type": "origins:biome",
+                "condition": {
+                    "type": "origins:temperature",
+                    "comparison": ">=",
+                    "compare_to": 2
+                }
+            },
+            {
+                "type": "origins:daytime"
+            }
+        ]
+    },
+	"hidden":"true"
+}

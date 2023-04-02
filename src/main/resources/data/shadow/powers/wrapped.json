@@ -1,0 +1,16 @@
+{
+    "type": "origins:inventory",
+    "container_type": "hopper",
+    "drop_on_death": false,
+    "key": {
+        "key": "key.origins.primary_active"
+    },
+	"name": "Mummy Wrap",
+    "description": "You can carry 5 extra items in your bandages which do not drop on death",
+    "badges": [
+        {
+            "sprite": "minecraft:textures/item/string.png",
+            "text": "Mummified"
+        }
+    ]
+}
