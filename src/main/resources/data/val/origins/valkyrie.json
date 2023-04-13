@@ -1,0 +1,24 @@
+{
+	"powers": [
+		"val:attribute/extra_hp",
+		"val:regen",
+		"val:attribute/hungry",
+		"val:strong_arms",
+		"val:attribute/natural_armour",
+		"val:attribute/axe_damage",
+		"val:attribute/sword_damage",
+		"val:first_level_up/foresight",
+		"val:cold_place",
+		"val:hot_place",
+		"val:very_hot",
+		"val:regen_power",
+		"val:launch",
+		"val:elytra",
+		"val:trail"
+	],
+	"icon": "minecraft:diamond_sword",
+	"order": 10,
+	"impact": 3,
+	"name": "Valkyrie",
+	"description": "A Valkyrie has left Valhalla to find warriors to prepare for Ragnarok"
+}

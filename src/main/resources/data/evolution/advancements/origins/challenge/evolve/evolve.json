@@ -1,7 +1,7 @@
 {
     "display": {
         "icon": {
-            "item": "minecraft:honey_bottle",
+            "item": "evolved:evolution_bottle",
             "nbt": "{Enchantments:[{id:\"sharpness\",lvl:1}]}"
         },
         "title": {
@@ -16,17 +16,11 @@
     },
     "criteria": {
         "evolve": {
-            "trigger": "minecraft:using_item",
+            "trigger": "minecraft:consume_item",
             "conditions": {
                 "item": {
                     "items": [
-                        "minecraft:honey_bottle"
-                    ],
-                    "enchantments": [
-                        {
-                            "enchantment": "minecraft:unbreaking",
-                            "levels": 5
-                        }
+                        "evolved:evolution_bottle"
                     ]
                 }
             }

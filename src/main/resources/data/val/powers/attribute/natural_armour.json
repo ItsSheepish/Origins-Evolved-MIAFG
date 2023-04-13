@@ -1,0 +1,16 @@
+{
+    "type": "origins:attribute",
+    "modifier": {
+        "attribute": "minecraft:generic.armor",
+        "value": 3,
+        "operation": "addition"
+    },
+    "name": "Valkyrie Protection",
+	"description": "Because of your Elven magic you learnt at a young age when training to become a Valkyrie.",
+    "badges": [
+        {
+            "sprite": "minecraft:textures/mob_effect/absorption.png",
+            "text": "Valkyrie Protection"
+        }
+    ]
+}

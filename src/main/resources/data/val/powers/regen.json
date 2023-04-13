@@ -1,0 +1,21 @@
+{
+    "type": "origins:stacking_status_effect",
+    "min_stacks": -1,
+    "max_stacks": 1,
+    "duration_per_stack": 21,
+    "tick_rate": 20,
+    "effect": {
+        "effect": "minecraft:regeneration",
+        "is_ambient": true,
+        "show_particles": false,
+        "show_icon": true
+    },
+    "name": "Regeneration",
+	"description": "You have the supernatural ability to heal yourself quickly",
+    "badges": [
+        {
+        "sprite": "minecraft:textures/item/golden_apple.png",
+        "text": "Valkyrie Magic"
+        }
+    ]
+}

@@ -23,5 +23,5 @@
     "requirements": [
         ["chose_avian"]
     ],
-    "parent": "evolution:origins/origin/origin"
+    "parent": "evolution:origins/origin"
 }

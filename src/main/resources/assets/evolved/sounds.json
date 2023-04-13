@@ -1,0 +1,18 @@
+{
+  "megalovania": {
+    "sounds": [
+      {
+        "name": "evolved:badtime",
+        "stream": true
+      }
+    ]
+  },
+  "ghostfight": {
+    "sounds": [
+      {
+        "name": "evolved:ghostfight",
+        "stream": true
+      }
+    ]
+  }
+}

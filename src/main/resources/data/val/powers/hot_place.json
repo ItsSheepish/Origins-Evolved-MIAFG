@@ -1,0 +1,77 @@
+{
+    "type": "origins:multiple",
+    "slow": {
+        "type": "origins:stacking_status_effect",
+        "min_stacks": -1,
+        "max_stacks": 1,
+        "duration_per_stack": 21,
+        "tick_rate": 20,
+        "effect": {
+            "effect": "minecraft:slowness",
+            "is_ambient": true,
+            "show_particles": false,
+            "show_icon": true
+            
+        },
+        "condition": {
+            "type": "origins:biome",
+            "condition": {
+                "type": "origins:temperature",
+                "comparison": ">=",
+                "compare_to": 2
+            }
+        }
+    },
+    "hunger": {
+        "type": "origins:stacking_status_effect",
+        "min_stacks": -1,
+        "max_stacks": 1,
+        "duration_per_stack": 21,
+        "tick_rate": 20,
+        "effect": {
+            "effect": "minecraft:hunger",
+            "is_ambient": true,
+            "show_particles": false,
+            "show_icon": true
+            
+        },
+        "condition": {
+            "type": "origins:biome",
+            "condition": {
+                "type": "origins:temperature",
+                "comparison": ">=",
+                "compare_to": 2
+            }
+        }
+    },
+    "damage": {
+        "type": "origins:stacking_status_effect",
+        "min_stacks": -1,
+        "max_stacks": 1,
+        "duration_per_stack": 21,
+        "tick_rate": 20,
+        "effect": {
+            "effect": "minecraft:weakness",
+            "is_ambient": true,
+            "show_particles": false,
+            "show_icon": true
+            
+        },
+        "condition": {
+            "type": "origins:biome",
+            "condition": {
+                "type": "origins:temperature",
+                "comparison": ">=",
+                "compare_to": 2
+            }
+        }
+    },
+    "name": "Hated Environment",
+	"description": "You hate to fight in more hot climates.",
+    "badges": [
+        {
+        "sprite": "minecraft:textures/item/blaze_powder.png",
+        "text": "Cold Environment"
+        }
+    ]
+}

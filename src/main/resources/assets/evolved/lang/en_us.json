@@ -1,5 +1,15 @@
 {
   "itemGroup.evolved.miafg": "MIAFG Origins!",
+
   "item.evolved.evolution_bottle": "Bottle Of Evolution",
-  "item.evolved.flower_pouch": "Flower Pouch"
+
+  "enchantment.evolved.lifesteal": "Lifesteal",
+
+  "item.evolved.flower_pouch": "Flower Pouch",
+
+  "item.evolved.megalovania_disc": "Music Disc",
+  "item.evolved.megalovania_disc.desc": "Megalovania - Toby Fox",
+
+  "item.evolved.ghost_fight_disc": "Music Disc",
+  "item.evolved.ghost_fight_disc.desc": "Ghost Fight - Toby Fox"
 }

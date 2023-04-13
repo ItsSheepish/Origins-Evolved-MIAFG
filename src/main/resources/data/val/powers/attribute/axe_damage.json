@@ -1,0 +1,30 @@
+{
+    "type": "origins:conditioned_attribute",
+    "modifier": {
+        "attribute": "minecraft:generic.attack_damage",
+        "value": -5,
+        "operation": "addition"
+    },
+    "condition": {
+        "type":"origins:equipped_item",
+        "equipment_slot": "mainhand",
+        "item_condition": {
+            "type": "origins:ingredient",
+            "ingredient":{
+                "tag": "val:axes"
+            }
+        }
+    },
+    "name": "Valkyrie Training",
+	"description": "Because of your training you are not good with axes, but better with swords.",
+    "badges": [
+        {
+            "sprite": "minecraft:textures/item/wooden_axe.png",
+            "text": "Bad Valkyrie Training"
+        },
+        {
+            "sprite": "minecraft:textures/mob_effect/strength.png",
+            "text": "Valkyrie Training"
+        }
+    ]
+}

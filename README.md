@@ -46,10 +46,13 @@ If you want to report a bug, please visit [the issue tracker](https://github.com
 
    - In *Shadow Mode*: You see in a darker tone, you are much faster, you are able to phase into and out of blocks, you are able to become the shadow of a player/mob (mount/ride any mob you right click). This mode lasts for 30 seconds unless interupted; it can be cancelled at any time and recharged when the sun is above you (not blocked by any full blocks).
    - You will have an increased hunger drain while in this mod however and it **will not** kick you out of the toggle if you start taking hunger damage therefore it is important you keep an eye on it. It *will* kick you out of the mode if you take damage from a player.
+<!--near complete-->
 </details>
 
 <details>
 <summary>Valkyrie</summary>
+
+>"A trained fighter with a knack for a sword ready to assist and guide others into the afterlife safely"
 <!--review charlie's origin when at home-->
 </details>
 
@@ -67,7 +70,10 @@ If you want to report a bug, please visit [the issue tracker](https://github.com
 <summary>Mushroom Dweller</summary>
 </details>
 
-- [ ] **and more**
+<details>
+<summary>and more</summary>
+(probably)
+</details>
 
 ### Evolving Origins
 
@@ -87,3 +93,18 @@ All origins used in this mod (including from the base origins mod) allow you to 
     - For Pharaoh
 - Dragon Scale Sword (sword)
     - For Valkyrie
+
+#### Music Discs
+
+- Undertale Soundtrack
+  - Most of the boss songs used in Undertale are now available in music disc form
+- Bluelotshot
+  - MIAFG member - intro song and 1 hour of him butting in every so often in disc form
+- 4 Big Guys
+  - Monke's request - vouched by half the server
+- 2 Trucks
+  - Leon's request
+
+#### Enchantments
+
+Enchantments which provide a dulled down variant of a power or similar to existing power - found as treasure

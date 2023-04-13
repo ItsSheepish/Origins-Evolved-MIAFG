@@ -1,0 +1,13 @@
+{
+    "type": "origins:exhaust",
+    "name": "Nordic Appetite",
+	"description": "You lived in the great halls of Valhalla making your appetite grow.",
+    "interval": 40,
+    "exhaustion": 2,
+    "badges": [
+        {
+            "sprite": "minecraft:textures/item/apple.png",
+            "text": "Nordic Appetite"
+        }
+    ]
+}

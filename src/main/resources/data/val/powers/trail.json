@@ -1,0 +1,18 @@
+{
+    "type": "origins:particle",
+    "particle":{
+        "type": "minecraft:dust",
+        "params": "1 0.9 0 1"
+    },
+    "frequency": 2,
+    "count": 2,
+    "speed": 0.0,
+    "name": "Valkyrie Path",
+	"description": "You leave a trail of the gods behind you as you walk.",
+    "badges": [
+        {
+            "sprite": "minecraft:textures/item/glowstone_dust.png",
+            "text": "Valkyrie Trial"
+        }
+    ]
+}

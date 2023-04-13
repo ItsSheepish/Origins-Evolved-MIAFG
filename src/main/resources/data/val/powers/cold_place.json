@@ -1,0 +1,71 @@
+{
+    "type": "origins:multiple",
+    "speed": {
+        "type": "origins:stacking_status_effect",
+        "min_stacks": -1,
+        "max_stacks": 1,
+        "duration_per_stack": 21,
+        "tick_rate": 20,
+        "effect": {
+            "effect": "minecraft:speed",
+            "is_ambient": true,
+            "show_particles": false,
+            "show_icon": true
+            
+        },
+        "condition": {
+            "type": "origins:biome",
+            "condition": {
+                "type": "origins:temperature",
+                "comparison": "==",
+                "compare_to": 0
+            }
+        }
+    },
+    "knockback": {
+        "type": "origins:conditioned_attribute",
+        "modifier": {
+            "attribute": "minecraft:generic.attack_knockback",
+            "value": 1.125,
+            "operation": "multiply_base"
+        },
+        "condition": {
+            "type": "origins:biome",
+            "condition": {
+                "type": "origins:temperature",
+                "comparison": "==",
+                "compare_to": 0
+            }
+        }
+    },
+    "damage": {
+        "type": "origins:stacking_status_effect",
+        "min_stacks": -1,
+        "max_stacks": 1,
+        "duration_per_stack": 21,
+        "tick_rate": 20,
+        "effect": {
+            "effect": "minecraft:strength",
+            "is_ambient": true,
+            "show_particles": false,
+            "show_icon": true
+            
+        },
+        "condition": {
+            "type": "origins:biome",
+            "condition": {
+                "type": "origins:temperature",
+                "comparison": "==",
+                "compare_to": 0
+            }
+        }
+    },
+    "name": "Preferred Environment",
+	"description": "You prefer to fight in more icey climates.",
+    "badges": [
+        {
+        "sprite": "minecraft:textures/item/snowball.png",
+        "text": "Cold Environment"
+        }
+    ]
+}

@@ -1,0 +1,16 @@
+{
+    "type": "origins:attribute",
+    "modifier": {
+        "attribute": "minecraft:generic.max_health",
+        "value": 10,
+        "operation": "addition"
+    },
+    "name": "Nordic Resilience",
+	"description": "Because of your nordic lineage you can with stand more blows.",
+    "badges": [
+        {
+            "sprite": "minecraft:textures/mob_effect/instant_health.png",
+            "text": "Nordic Health"
+        }
+    ]
+}

@@ -1,0 +1,97 @@
+{
+    "type":"origins:multiple",
+    "move":{
+        "type": "origins:self_action_when_hit",
+        "entity_action": {
+            "type": "origins:execute_command",
+            "command": "spreadplayers ~ ~ 3 3 false @s"
+        },
+        "condition": {
+            "type": "origins:power_active",
+            "power": "*:*_toggle"
+        }
+    },
+    "toggle":{
+        "type": "origins:toggle",
+        "key": {
+            "key":"key.origins.primary_active"
+        },
+        "active_by_default": false
+    },
+    "book":{
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:toggle",
+            "power": "*:*_toggle"
+        },
+        "condition": {
+            "type": "origins:resource",
+            "resource":"*:*_timer",
+            "comparison": "==",
+            "compare_to": 0
+        }
+    },
+    "timer":{
+        "type": "origins:resource",
+        "min": 0,
+        "max": 15,
+        "start_value": 15,
+        "hud_render": {
+            "should_render": true,
+            "sprite_location":"origins:textures/gui/community/huang/resource_bar_01.png",
+            "bar_index": 6
+        }
+    },
+    "timer_timer":{
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource":"*:*_timer",
+            "change": -1
+        },
+        "condition": {
+            "type": "origins:power_active",
+            "power": "*:*_toggle"
+        }
+    },
+    "timer_book":{
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource":"*:*_timer",
+            "change": 1
+        },
+        "condition": {
+            "type":"origins:and",
+            "conditions":[
+                {
+                    "type": "origins:power_active",
+                    "power": "*:*_toggle",
+                    "inverted": true
+                },
+                {
+                    "type": "origins:equipped_item",
+                    "equipment_slot": "mainhand",
+                    "item_condition": {
+                        "type": "origins:ingredient",
+                        "ingredient":{
+                            "item": "book"
+                        }
+                    }
+                }
+            ]
+        }
+    },
+    "damage":{
+        "type": "origins:modify_damage_taken",
+        "condition": {
+            "type": "origins:power_active",
+            "power": "*:*_toggle"
+        },
+        "modifier": {
+            "name": "null_damage",
+            "operation":"multiply_base",
+            "value": -0.5
+        }
+    }
+}

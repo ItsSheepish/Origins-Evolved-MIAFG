@@ -1,0 +1,25 @@
+{
+    "type": "origins:active_self",
+    "entity_action": {
+        "type": "origins:execute_command",
+        "command": "summon area_effect_cloud ~ ~ ~ {Particle:\"dust 0.820 0.780 0.412 1\",Radius:2f,RadiusOnUse:-0.1f,Duration:60,DurationOnUse:60f,Age:10,WaitTime:10,Color:12893261,Effects:[{Id:10,Amplifier:2b,Duration:60,ShowParticles:0b}]}"
+    },
+    "key": {
+        "key": "key.origins.secondary_active"
+    },
+    "hidden": true,
+    "cooldown": 150,
+    "hud_render": {
+        "should_render": true,
+        "sprite_location":"origins:textures/gui/community/huang/resource_bar_01.png",
+        "bar_index": 4
+    },
+    "name": "Ally Regeneration",
+	"description": "You have the supernatural ability to heal others quickly",
+    "badges": [
+        {
+        "sprite": "minecraft:textures/item/cake.png",
+        "text": "Magic"
+        }
+    ]
+}

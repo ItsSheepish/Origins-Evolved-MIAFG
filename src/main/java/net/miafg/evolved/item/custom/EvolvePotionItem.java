@@ -4,6 +4,8 @@ import net.minecraft.advancement.criterion.Criteria;
 import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.client.item.TooltipContext;
 import net.minecraft.entity.LivingEntity;
+import net.minecraft.entity.effect.StatusEffectInstance;
+import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
@@ -51,6 +53,7 @@ public class EvolvePotionItem extends Item {
         if (!world.isClient()) {
             //remove all potion effect
             user.clearStatusEffects();
+            user.addStatusEffect(new StatusEffectInstance(StatusEffects.STRENGTH,6000,0));
         }
         if (!world.isClient()) {
             //output evolve success or fail
@@ -66,7 +69,8 @@ public class EvolvePotionItem extends Item {
     @Override
     public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
         if(Screen.hasShiftDown()) {
-            tooltip.add(Text.literal("Drink the potion to start the evolution process").formatted(Formatting.WHITE));
+            tooltip.add(Text.literal("Drink the potion to start the evolution process,").formatted(Formatting.WHITE));
+            tooltip.add(Text.literal("if you succeed that is...").formatted(Formatting.WHITE));
         } else {
             tooltip.add(Text.literal("Hold shift for more info!").formatted(Formatting.WHITE));
         }
