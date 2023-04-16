@@ -28,7 +28,7 @@ public class Lifesteal extends Enchantment {
             ((LivingEntity) target).addStatusEffect(new StatusEffectInstance(StatusEffects.WITHER, 40+(level*10), 0, true, false));
             if (level == 3) {
                 user.addStatusEffect(new StatusEffectInstance(StatusEffects.HEALTH_BOOST, 40+(level*10), 0, true, false));
-                user.addStatusEffect(new StatusEffectInstance(StatusEffects.INSTANT_HEALTH, 40+(level*10), 0, true, false));
+                user.addStatusEffect(new StatusEffectInstance(StatusEffects.INSTANT_HEALTH, 40 + (level * 10), 0, true, false));
             }
         }
 

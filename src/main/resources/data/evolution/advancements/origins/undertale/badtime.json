@@ -1,0 +1,32 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:bone"
+        },
+        "title": {
+            "text": "Do you wanna have a bad time?"
+        },
+        "description": {
+            "text": "It's a beautiful day outside. birds are singing, flowers are blooming... on days like these, kids like you... Should be burning in hell.",
+            "color": "dark_aqua"
+        },
+        "frame": "challenge",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "criteria": {
+        "karma": {
+            "trigger": "minecraft:effects_changed",
+            "conditions": {
+                "effects": {
+                    "evolved:karma": {}
+                }
+            }
+        }
+    },
+    "requirements": [
+        ["karma"]
+    ],
+    "parent": "evolution:origins/root"
+}

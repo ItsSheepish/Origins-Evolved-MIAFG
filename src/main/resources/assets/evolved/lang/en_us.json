@@ -1,9 +1,14 @@
 {
   "itemGroup.evolved.miafg": "MIAFG Origins!",
+  "key.evolved.evolution.tree": "Blue Soul Jump",
 
   "item.evolved.evolution_bottle": "Bottle Of Evolution",
 
   "enchantment.evolved.lifesteal": "Lifesteal",
+
+  "effect.evolved.karma": "Karma",
+  "effect.evolved.blue_soul": "Integrity",
+  "death.attack.karma": "%s had a bad time",
 
   "item.evolved.flower_pouch": "Flower Pouch",
 

@@ -1,6 +1,7 @@
 package net.miafg.evolved;
 
 import net.fabricmc.api.ModInitializer;
+import net.miafg.evolved.effects.ModEffects;
 import net.miafg.evolved.enchantment.ModEnchants;
 import net.miafg.evolved.item.ModItems;
 import org.slf4j.Logger;
@@ -13,6 +14,9 @@ public class EvolvedMod implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		ModItems.registerModItems();
+
 		ModEnchants.registerModEnchantments();
+
+		ModEffects.registerEffects();
 	}
 }
