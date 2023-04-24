@@ -41,16 +41,15 @@ If you want to report a bug, please visit [the issue tracker](https://github.com
 + You will gain buffs in warm biomes (e.g. Desert) and debuffs in cold biomes (e.g. Snowy Plains)
 + You can only eat meat (except for bottled items)
 + You have 5 extra inventory spaces which do not drop on death
-+ You have a pocket dimension (only desert biome): no other mobs or players can be sent here, **it is just a world where you can build**
 + You can toggle shadow mode (which lasts for 30 seconds)
 
    - In *Shadow Mode*: You see in a darker tone, you are much faster, you are able to phase into and out of blocks, you are able to become the shadow of a player/mob (mount/ride any mob you right-click). This mode lasts for 30 seconds unless interrupted; it can be cancelled at any time and recharged when the sun is above you (not blocked by any full blocks).
-   - You will have an increased hunger drain while in this mod however, and it **will not** kick you out of the toggle if you start taking hunger damage therefore it is important you keep an eye on it. It *will* kick you out of the mode if you take damage from a player.
+   - You will have an increased hunger drain while in this mode and you **will not** be kicked out of the toggle if you start taking hunger damage therefore it is important you keep an eye on it. It *will* kick you out of the mode if you take damage from a player.
 <!--near complete-->
 </details>
 
 <details>
-<summary>Valkyrie</summary>
+<summary>Valkyrie (To Be Reviewed)</summary>
 
 >"A trained fighter with a knack for a sword ready to assist and guide others into the afterlife safely"
 <!--review charlie's origin when at home-->
@@ -58,6 +57,13 @@ If you want to report a bug, please visit [the issue tracker](https://github.com
 
 <details>
 <summary>Goblin</summary> 
+
+>"The original deal-makers, hagglers and thieves"
+
++ You have better trade prices with villagers
++ You have an invisibility toggle
++ You are slightly faster than a human
+
 <!--inchling-esque TBC-->
 </details>
 
@@ -72,7 +78,7 @@ If you want to report a bug, please visit [the issue tracker](https://github.com
 
 <details>
 <summary>and more</summary>
-(probably)
+(probably) if people request origins I will speak with Leon to discuss if we can add it
 </details>
 
 ### Evolving Origins
@@ -84,15 +90,36 @@ All origins used in this mod (including from the base origins mod) allow you to 
 ### Items
 
 - Bottle of Evolution (potion)
-    - For every origin
-    - Gives the player an advancement (current idea) / custom tree (if I can) and evolves their current origin to the next level (if the potion is made correctly) 
-- Mushroom Cap (helmet slot)
-    - For Mushroom Dweller
-    - Prevents the player from wearing a helmet
-- Crown (helmet slot)
-    - For Pharaoh
-- Dragon Scale Sword (sword)
-    - For Valkyrie
+   - For every origin
+   - Has low chance to fail which just means they don't evolve
+   - Gives the player the "Evolved" advancement and evolves their current origin to the next level
+- Flower Pouch
+   - Crafting Item
+- Souls
+   - Ender Soul
+      - Crafting Item
+      - Acts like chorus fruit when consumed
+   - Merling Soul
+      - Crafting Item
+      - Gives temporary water breathing when consumed
+   - Phantom Soul
+      - Crafting Item
+      - Gives temporary invisibility when consumed
+   - Elytrian Soul
+      - Crafting Item
+      - Grants temporary fall damage immunity when consumed
+   - Blaze Soul
+      - Crafting Item
+      - Gives temporary fire resistance when consumed
+   - Shulker Soul
+      - Crafting Item
+      - Gives temporary resistance when consumed
+   - Arachnid Soul
+      - Crafting Item
+      - Grants temporary ability to climb walls when consumed
+   - Avian Soul
+      - Crafting Item
+      - Gives temporary slow falling when consumed
 
 #### Music Discs
 
@@ -108,3 +135,15 @@ All origins used in this mod (including from the base origins mod) allow you to 
 #### Enchantments
 
 Enchantments which provide a dulled down variant of a power or similar to existing power - found as treasure
+
++ Lifesteal
+   - 3 Levels
+      - Third level enchantment then they will also be given some temporary hearts
+   - Sword Enchantment
+   - The user is able to attack creatures regenerating some of their health
++ Spore Growth
+   - 2 Levels
+      - Area the effect spreads increases
+   - Armor Enchantment
+   - When the user is hit, a cloud of poisonous spores is released
+   - Gives immunity to spore effect
