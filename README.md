@@ -134,16 +134,28 @@ All origins used in this mod (including from the base origins mod) allow you to 
 
 #### Enchantments
 
-Enchantments which provide a dulled down variant of a power or similar to existing power - found as treasure
+Enchantments which provide a dulled down variant of a power or similar to existing power - found as treasure or high level enchanting table
 
 + Lifesteal
    - 3 Levels
-      - Third level enchantment then they will also be given some temporary hearts
+      - Regeneration duration increases
+      - Temporary hearts at third level
    - Sword Enchantment
    - The user is able to attack creatures regenerating some of their health
 + Spore Growth
    - 2 Levels
-      - Area the effect spreads increases
-   - Armor Enchantment
-   - When the user is hit, a cloud of poisonous spores is released
-   - Gives immunity to spore effect
+      - Poison duration and amplifier increases
+      - Chance to inflict increases
+   - Chestplate Enchantment
+   - When the user is hit, there is a chance that the attacker is given the poison status effect
++ Haggler
+   - 4 Levels
+      - Chance of finding rare ores increases
+      - Low netherite scrap chance at fourth level
+   - Fishing Enchantment
+   - The user has a chance to find (ore) treasure when fishing 
++ Radiance
+   - 1 Level
+      - Glowing
+   - Helmet Enchantment
+   - In the day, when exposed to the sun, strength is increased
