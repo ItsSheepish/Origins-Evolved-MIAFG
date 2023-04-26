@@ -34,4 +34,19 @@ public class Lifesteal extends Enchantment {
 
         super.onTargetDamaged(user, target, level);
     }
+
+    @Override
+    public boolean isTreasure() {
+        return true;
+    }
+
+    @Override
+    public boolean isAvailableForEnchantedBookOffer() {
+        return false;
+    }
+
+    @Override
+    public boolean isAvailableForRandomSelection() {
+        return true;
+    }
 }

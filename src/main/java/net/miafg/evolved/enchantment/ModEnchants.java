@@ -10,7 +10,12 @@ import net.minecraft.util.registry.Registry;
 public class ModEnchants {
     public static Enchantment LIFESTEAL = register("lifesteal",
             new Lifesteal(Enchantment.Rarity.VERY_RARE,
-                    EnchantmentTarget.WEAPON, new EquipmentSlot[]{EquipmentSlot.MAINHAND, EquipmentSlot.OFFHAND}));
+                    EnchantmentTarget.WEAPON,
+                    new EquipmentSlot[]{EquipmentSlot.MAINHAND, EquipmentSlot.OFFHAND}));
+    public static Enchantment SPORE = register("spore",
+            new Spore(Enchantment.Rarity.VERY_RARE,
+                    EnchantmentTarget.ARMOR_CHEST,
+                    new EquipmentSlot[]{EquipmentSlot.CHEST}));
 
     private static Enchantment register(String name, Enchantment enchantment) {
         return Registry.register(Registry.ENCHANTMENT, new Identifier(EvolvedMod.MOD_ID, name), enchantment);
