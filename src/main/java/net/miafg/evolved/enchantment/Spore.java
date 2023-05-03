@@ -1,5 +1,6 @@
 package net.miafg.evolved.enchantment;
 
+import net.miafg.evolved.config.ModConfigs;
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.enchantment.EnchantmentTarget;
 import net.minecraft.entity.Entity;
@@ -11,7 +12,7 @@ import net.minecraft.util.math.random.Random;
 
 public class Spore extends Enchantment {
 
-    public Spore(Rarity weight, EnchantmentTarget type, EquipmentSlot... slotTypes) {
+    public Spore(Rarity weight, EquipmentSlot... slotTypes) {
         super(weight, EnchantmentTarget.ARMOR_CHEST, slotTypes);
     }
 
@@ -40,12 +41,12 @@ public class Spore extends Enchantment {
 
     @Override
     public boolean isTreasure() {
-        return true;
+        return ModConfigs.SPORE_TREASURE;
     }
 
     @Override
     public boolean isAvailableForEnchantedBookOffer() {
-        return false;
+        return ModConfigs.SPORE_VILLAGER_TRADABLE;
     }
 
     @Override

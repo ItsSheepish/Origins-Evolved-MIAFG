@@ -14,8 +14,20 @@ public class ModEnchants {
                     new EquipmentSlot[]{EquipmentSlot.MAINHAND, EquipmentSlot.OFFHAND}));
     public static Enchantment SPORE = register("spore",
             new Spore(Enchantment.Rarity.VERY_RARE,
-                    EnchantmentTarget.ARMOR_CHEST,
-                    new EquipmentSlot[]{EquipmentSlot.CHEST}));
+                    EquipmentSlot.CHEST));
+    public static Enchantment RADIANCE = register("radiance",
+            new Radiance(Enchantment.Rarity.VERY_RARE,
+                    EquipmentSlot.HEAD));
+
+    public static Enchantment HAGGLER = register("haggler",
+            new Haggler(Enchantment.Rarity.VERY_RARE,
+                    EnchantmentTarget.FISHING_ROD,
+                    new EquipmentSlot[]{EquipmentSlot.MAINHAND, EquipmentSlot.OFFHAND}));
+
+    public static Enchantment FROST = register("frost",
+            new Frost(Enchantment.Rarity.VERY_RARE,
+                    EnchantmentTarget.BOW,
+                    new EquipmentSlot[]{EquipmentSlot.MAINHAND, EquipmentSlot.OFFHAND}));
 
     private static Enchantment register(String name, Enchantment enchantment) {
         return Registry.register(Registry.ENCHANTMENT, new Identifier(EvolvedMod.MOD_ID, name), enchantment);

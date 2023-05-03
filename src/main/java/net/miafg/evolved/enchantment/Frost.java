@@ -6,9 +6,10 @@ import net.minecraft.enchantment.EnchantmentTarget;
 import net.minecraft.entity.*;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
-public class Lifesteal extends Enchantment {
 
-    public Lifesteal(Rarity weight, EnchantmentTarget type, EquipmentSlot... slotTypes) {
+public class Frost extends Enchantment {
+
+    public Frost(Rarity weight, EnchantmentTarget type, EquipmentSlot... slotTypes) {
         super(weight, type, slotTypes);
     }
 
@@ -25,11 +26,10 @@ public class Lifesteal extends Enchantment {
     @Override
     public void onTargetDamaged(LivingEntity user, Entity target, int level) {
         if(!user.world.isClient()) {
-            user.addStatusEffect(new StatusEffectInstance(StatusEffects.REGENERATION, 40+(level*10), 0, true, false));
-            ((LivingEntity) target).addStatusEffect(new StatusEffectInstance(StatusEffects.WITHER, 40+(level*10), 0, true, false));
-            if (level == 3) {
-                user.addStatusEffect(new StatusEffectInstance(StatusEffects.HEALTH_BOOST, 40+(level*10), 0, true, false));
-                user.addStatusEffect(new StatusEffectInstance(StatusEffects.INSTANT_HEALTH, 40 + (level * 10), 0, true, false));
+            if (target instanceof LivingEntity) {
+                LivingEntity livingTarget = (LivingEntity) target;
+                livingTarget.addStatusEffect(new StatusEffectInstance(StatusEffects.SLOWNESS, 200+(200*(level/2)), 9,true,false));
+                livingTarget.setFrozenTicks(200+(200*(level/2)));
             }
         }
 
@@ -38,12 +38,12 @@ public class Lifesteal extends Enchantment {
 
     @Override
     public boolean isTreasure() {
-        return ModConfigs.LIFESTEAL_TREASURE;
+        return ModConfigs.FROST_TREASURE;
     }
 
     @Override
     public boolean isAvailableForEnchantedBookOffer() {
-        return ModConfigs.LIFESTEAL_VILLAGER_TRADABLE;
+        return ModConfigs.FROST_VILLAGER_TRADABLE;
     }
 
     @Override
